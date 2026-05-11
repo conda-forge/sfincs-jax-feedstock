@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.0"
+  version: "1.1.1"
   python_min: "3.10"
 
 package:
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sfincs-jax/sfincs_jax-${{ version }}.tar.gz
-  sha256: 176f9be44776e668545eddbb75dc4b8b519d72cf2f16e7368d9b68c2b54b1408
+  sha256: 40076c18deafa043adf3fb5ca23b6b641b86854622cfa9c9ceed3a54902f89af
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -40,8 +40,8 @@ tests:
         - sfincs_jax
       pip_check: true
       python_version:
-       - ${{ python_min }}.*
-       - "*"
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - sfincs_jax --help
 
