@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.4"
+  version: "1.1.6"
   python_min: "3.10"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sfincs-jax/sfincs_jax-${{ version }}.tar.gz
-  sha256: 61d92f66bebd19b7ebafbd5765a623491406a60abafa1ecbc796440cbd139099
+  sha256: c4bfe14737465c5c7b8e20b96cf7ed3471417c4dd0f775b57195bcbd79b98b22
 
 build:
   number: 0
